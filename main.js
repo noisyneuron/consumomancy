@@ -111,7 +111,7 @@ function getAmazon(asin, index, it) {
         it = 0;
       }
       if(index >= indices.length) {
-        console.log("uhh... seems you have no future, no future needs. good bye.");
+        console.log("uhh... seems you have no future, no future consumption. good bye.");
         process.exit();
       } else {
         var idx = parseInt(indices[index]);
@@ -133,7 +133,7 @@ Promise.all([cpu, mem, net, proc])
     generateIndices();
     // console.log(indices);
     // console.log(indices);
-    process.stdout.write("Please wait while I determine who you are and what you need ...")
+    process.stdout.write("Please wait while I determine what your future of consumption is. REMEMBER: You Are What You Consume....")
     var asin = generateAsin();  
     getAmazon(asin, 0, 0);
   })
